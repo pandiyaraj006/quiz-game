@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+body{
+    height:100vh;
+    width:100%;
+}
+#head{
+    height:15%;
+    background-color: aqua;
+    font-size: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    
+    width:100%;
+    height:85%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p
+{
+    height:20%;
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+#one{
+    height:10%;
+    margin-left: -0.5%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#two{
+    font-size: 1.5rem;
+    height:10%;
+    margin-left: -4%;
+    font-weight: 600;
+}
+#three{
+    font-size: 1.5rem;
+    margin-left: -0.5%;
+    height:10%;
+    font-weight: 600;
+}
+span{
+    font-size: 2rem;
+    font-weight: 600;
+    height: 5%;
+}
+#buttons{
+    height:10%;
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-right: -20%;
+}
+#btn2{
+    display: none;
+}
+#btn{
+    display: none;
+}
+button{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 15%;
+    border-color:aqua;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    transform: scale(1.2);
+}
+#final
+{
+    width:100%;
+    height:100%;
+    display: none;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.score
+{
+    margin-top: -15%;
+    font-size: 2.7rem;
+}
+#final h2
+{
+    font-size:1.8rem;
+}
+

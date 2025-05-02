@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+    <title>Quiz Game</title>
+</head>
+<body>
+    <header id="head">
+        <h1> VPR QUESTIONS </h1>
+    </header>
+    <section id="container" class="0">
+        <span id="hover" class="0"></span>
+        <span id="zero" class="0"></span>
+        <p id="question" class="0"> Who is the CM of Tamil Nadu ?</p>
+        <div id="one">A: <span id="op1" class="0">Thalapathy Vijay</span></div>
+        <div id="two">B: <span id="op2">Ajith Kumar</span></div>
+        <div id="three">C: <span id="op3">Siva Karthikeyan</span></div>
+        <form id="option">
+            <span>A <input type="radio" name="option" value="A"></span> 
+            <span>B <input type="radio" name="option" value="B"></span>
+            <span>C <input type="radio" name="option" value="C"></span>
+        </form>
+        <div id="buttons">
+        <div><button id="btn" type="button">Next</button></div>
+        <div><button id="btn2" type="submit">Submit</button></div>
+        </div>
+       
+          
+
+    </section>
+    <div id="final">
+        <h1 class="score">Your Score</h1>
+        <h2> Total Questions : 5</h2>
+        <h2>Correct Answer : <span id="scores"></span></h2>
+        <h2> Wrong Answer : <span id="wrong"></span></h2>
+    </div>
+
+    
+</body>
+</html>
