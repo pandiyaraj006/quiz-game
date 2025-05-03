@@ -1,10 +1,14 @@
+document.getElementById("st").addEventListener("click", function(){
+    document.getElementById("str").style.display="none";
+    document.getElementById("container").style.display="flex";
+});
 let ind = parseInt(document.getElementById("question").getAttribute("class"));
 let ind1 = parseInt(document.getElementById("op1").getAttribute("class"));
 document.getElementById("option").addEventListener("click", function(event){
     if(event.target.type === "radio")
     {
         
-        if(ind === 4) 
+        if(ind === 5) 
         {
             document.getElementById("btn2").style.display="block";
         }
@@ -16,9 +20,9 @@ document.getElementById("option").addEventListener("click", function(event){
         }
     }
 });
-const arr = ["Who will be the Next Prime Minister ? ","How many IPL cups have RCB won ? ","Mubai Indians Another Name ? ","who is the Best ODI player ?","Who is the Best Captain of all Time ? "];
+const arr = ["2.Who will be the Next Prime Minister ? ","3.How many IPL cups have RCB won ? ","4.Mubai Indians Another Name ? ","5.who is the Best ODI player ?","6.Who is the Best Captain of all Time ? "];
 const ans = ["Dhoni MS","Virat King","Rohit Hitu","Lolipop","404 Error","zero","Umpires Team","paltans","Ambani Money","Chase Master","Hitman","cool finisher","Aggresive Virat","tactical Sharma", "Captain Cool"];
-const answer = ["A","A","B","B","C"];
+const answer = ["A","A","A","B","B","C"];
 document.getElementById("btn").addEventListener("click",function()
 {
     document.getElementById("btn").style.display="none";
@@ -42,8 +46,8 @@ document.getElementById("btn").addEventListener("click",function()
                document.getElementById("zero").setAttribute("class",m);
             }
             radios[i].checked = false;
-            ind2++;
-            document.getElementById("hover").setAttribute("class",ind2);
+            
+            document.getElementById("hover").setAttribute("class",ind2+1);
             break;
         }
     }
@@ -55,7 +59,7 @@ document.getElementById("btn2").addEventListener("click" , function(){
     document.getElementById("container").style.display="none";
     document.getElementById("final").style.display="flex";
     let points = document.getElementById("zero").getAttribute("class");
-    let wro = 5-points;
+    let wro = 6-points;
     document.getElementById("scores").innerHTML=points;
     document.getElementById("wrong").innerHTML=wro;
 });
